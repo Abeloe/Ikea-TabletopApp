@@ -10,6 +10,7 @@ using Windows.UI.Xaml.Controls;
 using Eventmaker.Common;
 using IkeaTabletopApp.Annotations;
 using IkeaTabletopApp.Model;
+using IkeaTabletopApp.Persistency;
 using IkeaTabletopApp.View;
 
 namespace IkeaTabletopApp.ViewModel
@@ -19,13 +20,15 @@ namespace IkeaTabletopApp.ViewModel
         private int _tempWidth;
         private int _tempLength;
         public RelayCommand NavigateToCommand { get; set; }
-        public WidthLength WidthLength { get; set; }
+       public WidthLength WidthLengthClass { get; set; }
+       public ListObjSingleton ListObjSingleton { get; set; }   
 
         public int TempLength
         {
             get { return _tempLength; }
             set
             {
+                
                 Length = value;
                 _tempLength = value;
 
@@ -37,7 +40,7 @@ namespace IkeaTabletopApp.ViewModel
             get { return _tempWidth; }
             set
             {
-
+                
                 Width = value;
                 _tempWidth = value;
 
@@ -52,20 +55,25 @@ namespace IkeaTabletopApp.ViewModel
 
         public WidthLengthVM()
         {
+            
             NavigateToCommand = new RelayCommand(Navigate);
             //Width = 500;
             //Length = 600;
-            WidthLength = new WidthLength();
+            ListObjSingleton= ListObjSingleton.Intance;
+            
+
         }
 
-        public void Setvalue()
-        {
-            WidthLength.Width = Width;
-            WidthLength.Length = Length;
+       public void test()
+       {
+            ListObjSingleton.ListObjSingletonList.Add(new WidthLength(Width,Length));
+          
         }
+      
+        
         public void Navigate()
         {
-            Setvalue();
+           test();
             Frame rootFrame = Window.Current.Content as Frame;
             rootFrame.Navigate(typeof(RectangularFinalView));
         }

@@ -9,15 +9,16 @@
     mc:Ignorable="d">
 
     <Page.DataContext>
-        <ViewModel:WidthLengthVM/>
+        <ViewModel:RectangularFinalVM/>
     </Page.DataContext>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="{Binding WidthLength.Width, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="509,290,0,0" Stroke="Black" VerticalAlignment="Top" Width="{Binding WidthLength.Length, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
-            
-    
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="{Binding Width, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="509,290,0,0" Stroke="Black" VerticalAlignment="Top" Width="{Binding Length, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+
+
         <TextBlock x:Name="Pris" HorizontalAlignment="Left" Margin="591,151,0,0" TextWrapping="Wrap" Text="Pris" VerticalAlignment="Top" Height="110" Width="326" FontSize="72"/>
         <TextBlock x:Name="SamletPris" HorizontalAlignment="Left" Margin="970,151,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="110" Width="326" FontSize="72"/>
+        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="1537,767,0,0" VerticalAlignment="Top" Height="152" Width="224" Command="{Binding GetbackCommand}"/>
 
     </Grid>
 </Page>

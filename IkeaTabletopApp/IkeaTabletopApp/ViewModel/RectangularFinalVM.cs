@@ -12,25 +12,44 @@ using Windows.UI.Xaml.Controls;
 using Eventmaker.Common;
 using IkeaTabletopApp.Annotations;
 using IkeaTabletopApp.Model;
+using IkeaTabletopApp.Persistency;
 using IkeaTabletopApp.View;
 
 namespace IkeaTabletopApp.ViewModel
 {
     public class RectangularFinalVM : INotifyPropertyChanged
     {
-        public WidthLengthVM WidthLengthVm { get; set; }
+        
         public int Width { get; set; }
         public int Length { get; set; }
+        public ListObjSingleton ListObjSingleton { get; set; }
+        public RelayCommand GetbackCommand { get; set; }
+      
 
         public RectangularFinalVM()
         {
-            WidthLengthVm = new WidthLengthVM();
-            //Width = Int32.Parse(WidthLengthVm.Width);
-            //Length = Int32.Parse(WidthLengthVm.Length);
+            ListObjSingleton= ListObjSingleton.Intance;
+            
+            Hej();
+            GetbackCommand=new RelayCommand(GetBack);
+            // WidthLengthVm = new WidthLengthVM();
+            //Test=new WidthLength(WidthLengthVm.WidthLengthClass.Width,WidthLengthVm.WidthLengthClass.Length);
+
+
         }
 
+        public void GetBack()
+        {
+            ListObjSingleton.ListObjSingletonList.Clear();
+            Frame rootFrame = Window.Current.Content as Frame;
+            rootFrame.Navigate(typeof(WidthLengthView));
+        }
 
-
+        public void Hej()
+        {
+            Width = ListObjSingleton.ListObjSingletonList[0].Width;
+            Length = ListObjSingleton.ListObjSingletonList[0].Length;
+        }
 
         public event PropertyChangedEventHandler PropertyChanged;
 
