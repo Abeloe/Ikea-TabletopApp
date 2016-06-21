@@ -9,11 +9,11 @@
     mc:Ignorable="d">
 
     <Page.DataContext>
-        <ViewModel:RectangularFinalVM/>
+        <ViewModel:WidthLengthVM/>
     </Page.DataContext>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="{Binding Width, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="509,290,0,0" Stroke="Black" VerticalAlignment="Top" Width="{Binding Length, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="{Binding WidthLength.Width, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Margin="509,290,0,0" Stroke="Black" VerticalAlignment="Top" Width="{Binding WidthLength.Length, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
             
     
         <TextBlock x:Name="Pris" HorizontalAlignment="Left" Margin="591,151,0,0" TextWrapping="Wrap" Text="Pris" VerticalAlignment="Top" Height="110" Width="326" FontSize="72"/>
