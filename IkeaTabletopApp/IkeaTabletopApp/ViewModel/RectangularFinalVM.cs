@@ -30,22 +30,22 @@ namespace IkeaTabletopApp.ViewModel
         {
             ListObjSingleton= ListObjSingleton.Intance;
             
-            Hej();
-            GetbackCommand=new RelayCommand(GetBack);
+            SetTableSize();
+            GetbackCommand=new RelayCommand(WidthLenghtNavigate);
             // WidthLengthVm = new WidthLengthVM();
             //Test=new WidthLength(WidthLengthVm.WidthLengthClass.Width,WidthLengthVm.WidthLengthClass.Length);
 
 
         }
 
-        public void GetBack()
+        public void WidthLenghtNavigate()
         {
             ListObjSingleton.ListObjSingletonList.Clear();
             Frame rootFrame = Window.Current.Content as Frame;
             rootFrame.Navigate(typeof(WidthLengthView));
         }
 
-        public void Hej()
+        public void SetTableSize()
         {
             Width = ListObjSingleton.ListObjSingletonList[0].Width;
             Length = ListObjSingleton.ListObjSingletonList[0].Length;

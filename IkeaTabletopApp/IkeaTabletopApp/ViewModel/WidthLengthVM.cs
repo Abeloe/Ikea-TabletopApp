@@ -64,7 +64,7 @@ namespace IkeaTabletopApp.ViewModel
 
         }
 
-       public void test()
+       public void AddWidthLength()
        {
             ListObjSingleton.ListObjSingletonList.Add(new WidthLength(Width,Length));
           
@@ -73,7 +73,7 @@ namespace IkeaTabletopApp.ViewModel
         
         public void Navigate()
         {
-           test();
+           AddWidthLength();
             Frame rootFrame = Window.Current.Content as Frame;
             rootFrame.Navigate(typeof(RectangularFinalView));
         }
