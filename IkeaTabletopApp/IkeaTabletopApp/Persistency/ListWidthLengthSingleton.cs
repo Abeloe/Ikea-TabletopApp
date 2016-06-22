@@ -7,18 +7,18 @@ using IkeaTabletopApp.Model;
 
 namespace IkeaTabletopApp.Persistency
 {
-    public class ListObjSingleton
+    public class ListWidthLengthSingleton
     {
-        private static ListObjSingleton intance= new ListObjSingleton();
+        private static ListWidthLengthSingleton intance= new ListWidthLengthSingleton();
 
-        public static ListObjSingleton Intance
+        public static ListWidthLengthSingleton Intance
         {
             get { return intance; }
         }
 
         public List<WidthLength> ListObjSingletonList { get; set; }
 
-        private ListObjSingleton()
+        private ListWidthLengthSingleton()
         {
             ListObjSingletonList= new List<WidthLength>();
         }

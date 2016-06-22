@@ -21,7 +21,7 @@ namespace IkeaTabletopApp.ViewModel
         private int _tempLength;
         public RelayCommand NavigateToCommand { get; set; }
        public WidthLength WidthLengthClass { get; set; }
-       public ListObjSingleton ListObjSingleton { get; set; }   
+       public ListWidthLengthSingleton ListWidthLengthSingleton { get; set; }   
 
         public int TempLength
         {
@@ -59,14 +59,14 @@ namespace IkeaTabletopApp.ViewModel
             NavigateToCommand = new RelayCommand(Navigate);
             //Width = 500;
             //Length = 600;
-            ListObjSingleton= ListObjSingleton.Intance;
+            ListWidthLengthSingleton= ListWidthLengthSingleton.Intance;
             
 
         }
 
        public void test()
        {
-            ListObjSingleton.ListObjSingletonList.Add(new WidthLength(Width,Length));
+            ListWidthLengthSingleton.ListObjSingletonList.Add(new WidthLength(Width,Length));
           
         }
       

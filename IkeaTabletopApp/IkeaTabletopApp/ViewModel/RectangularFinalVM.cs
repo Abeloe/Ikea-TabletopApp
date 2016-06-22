@@ -22,33 +22,33 @@ namespace IkeaTabletopApp.ViewModel
         
         public int Width { get; set; }
         public int Length { get; set; }
-        public ListObjSingleton ListObjSingleton { get; set; }
-        public RelayCommand GetbackCommand { get; set; }
+        public ListWidthLengthSingleton ListWidthLengthSingleton { get; set; }
+        public RelayCommand NavigateToWidthLengthCommand { get; set; }
       
 
         public RectangularFinalVM()
         {
-            ListObjSingleton= ListObjSingleton.Intance;
+            ListWidthLengthSingleton= ListWidthLengthSingleton.Intance;
             
-            Hej();
-            GetbackCommand=new RelayCommand(GetBack);
+            SetTableSize();
+            NavigateToWidthLengthCommand = new RelayCommand(NavigateToWidtgLength);
             // WidthLengthVm = new WidthLengthVM();
             //Test=new WidthLength(WidthLengthVm.WidthLengthClass.Width,WidthLengthVm.WidthLengthClass.Length);
 
 
         }
 
-        public void GetBack()
+        public void NavigateToWidtgLength()
         {
-            ListObjSingleton.ListObjSingletonList.Clear();
+            ListWidthLengthSingleton.ListObjSingletonList.Clear();
             Frame rootFrame = Window.Current.Content as Frame;
             rootFrame.Navigate(typeof(WidthLengthView));
         }
 
-        public void Hej()
+        public void SetTableSize()
         {
-            Width = ListObjSingleton.ListObjSingletonList[0].Width;
-            Length = ListObjSingleton.ListObjSingletonList[0].Length;
+            Width = ListWidthLengthSingleton.ListObjSingletonList[0].Width;
+            Length = ListWidthLengthSingleton.ListObjSingletonList[0].Length;
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
