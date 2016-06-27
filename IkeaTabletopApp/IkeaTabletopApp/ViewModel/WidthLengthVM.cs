@@ -17,11 +17,13 @@ namespace IkeaTabletopApp.ViewModel
 {
    public class WidthLengthVM : INotifyPropertyChanged
     {
+       public MaterialeSingleton MaterialeSingleton { get; set; }
         private int _tempWidth;
         private int _tempLength;
         public RelayCommand NavigateToCommand { get; set; }
        public WidthLength WidthLengthClass { get; set; }
-       public ListWidthLengthSingleton ListWidthLengthSingleton { get; set; }   
+       public ListWidthLengthSingleton ListWidthLengthSingleton { get; set; }
+        public string Navn { get; set; }
 
         public int TempLength
         {
@@ -60,11 +62,21 @@ namespace IkeaTabletopApp.ViewModel
             //Width = 500;
             //Length = 600;
             ListWidthLengthSingleton= ListWidthLengthSingleton.Intance;
-            
+            MaterialeSingleton = MaterialeSingleton.Intance;
+           // Navn = MaterialeSingleton.ListMaterialeSingleton[0];
+           NavnMateriale();
 
         }
 
-       public void test()
+        public void NavnMateriale()
+        {
+            //if (MaterialeSingleton.ListMaterialeSingleton.Count == 1)
+            {
+                 Navn = MaterialeSingleton.ListMaterialeSingleton[0];
+            }
+           
+        }
+        public void test()
        {
             ListWidthLengthSingleton.ListObjSingletonList.Add(new WidthLength(Width,Length));
           

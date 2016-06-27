@@ -24,6 +24,7 @@ namespace IkeaTabletopApp.ViewModel
         public int Length { get; set; }
         public ListWidthLengthSingleton ListWidthLengthSingleton { get; set; }
         public RelayCommand NavigateToWidthLengthCommand { get; set; }
+
       
 
         public RectangularFinalVM()
@@ -34,7 +35,7 @@ namespace IkeaTabletopApp.ViewModel
             NavigateToWidthLengthCommand = new RelayCommand(NavigateToWidtgLength);
             // WidthLengthVm = new WidthLengthVM();
             //Test=new WidthLength(WidthLengthVm.WidthLengthClass.Width,WidthLengthVm.WidthLengthClass.Length);
-
+          
 
         }
 

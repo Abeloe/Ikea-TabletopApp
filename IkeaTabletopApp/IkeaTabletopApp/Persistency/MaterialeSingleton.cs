@@ -16,12 +16,12 @@ namespace IkeaTabletopApp.Persistency
                 get { return intance; }
             }
 
-            public List<Materialer> ListMaterialeSingleton { get; set; }
+            public List<string> ListMaterialeSingleton { get; set; }
 
             private MaterialeSingleton()
             {
                 
-               ListMaterialeSingleton = new List<Materialer>();
+               ListMaterialeSingleton = new List<string>();
             }
         }
     

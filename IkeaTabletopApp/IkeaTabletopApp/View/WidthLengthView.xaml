@@ -13,7 +13,7 @@
     </Page.DataContext>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="601,105,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="179" Width="697"/>
+        <TextBlock x:Name="textBox" HorizontalAlignment="Left" Margin="601,105,0,0" TextWrapping="Wrap" Text="{Binding Navn, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Height="179" Width="697"/>
         <TextBox x:Name="textBox1" HorizontalAlignment="Left" Margin="786,513,0,0" TextWrapping="Wrap" Text="{Binding TempWidth, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Height="110" Width="296" FontSize="72"/>
         <TextBox x:Name="textBox1_Copy" HorizontalAlignment="Left" Margin="786,743,0,0" TextWrapping="Wrap" Text="{Binding TempLength, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Height="110" Width="296" FontSize="72"/>
         <TextBlock x:Name="Dybde" HorizontalAlignment="Left" Margin="786,406,0,0" TextWrapping="Wrap" Text="Dybde" VerticalAlignment="Top" Height="110" Width="296" FontSize="72"/>

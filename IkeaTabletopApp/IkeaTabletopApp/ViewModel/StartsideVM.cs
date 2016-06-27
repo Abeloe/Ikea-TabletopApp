@@ -9,6 +9,7 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Eventmaker.Common;
 using IkeaTabletopApp.Annotations;
+using IkeaTabletopApp.Persistency;
 using IkeaTabletopApp.View;
 
 namespace IkeaTabletopApp.ViewModel
@@ -25,6 +26,8 @@ namespace IkeaTabletopApp.ViewModel
         public RelayCommand MassivtræToWidthLengthCommand { get; set; }
         public RelayCommand KvartsToWidthLengthCommand { get; set; }
         public RelayCommand VægpladeToWidthLengthCommand { get; set; }
+        public MaterialeSingleton MaterialeSingleton { get; set; }
+       
 
 
         #region Akryl
@@ -108,6 +111,8 @@ namespace IkeaTabletopApp.ViewModel
             AkrylToWidthLengthCommand = new RelayCommand(AkrylNavigate);
             LaminatToWidthLengthCommand = new RelayCommand(LaminatNavigate);
             MassivtræToWidthLengthCommand = new RelayCommand(MassivtræNavigate);
+            MaterialeSingleton = MaterialeSingleton.Intance;
+           MaterialeSingleton.ListMaterialeSingleton.Add("Default");
         }
 
         #region Navigate Funktioner
@@ -116,30 +121,36 @@ namespace IkeaTabletopApp.ViewModel
         {
             Frame rootFrame = Window.Current.Content as Frame;
             rootFrame.Navigate(typeof (WidthLengthView));
+            MaterialeSingleton.ListMaterialeSingleton.Add("Kvarts");
         }
 
         public void VægpladeNavigate()
         {
             Frame rootFrame = Window.Current.Content as Frame;
             rootFrame.Navigate(typeof (WidthLengthView));
+            MaterialeSingleton.ListMaterialeSingleton.Insert(0, "Vægplade");
+
         }
 
         public void AkrylNavigate()
         {
             Frame rootFrame = Window.Current.Content as Frame;
             rootFrame.Navigate(typeof (WidthLengthView));
+            MaterialeSingleton.ListMaterialeSingleton.Insert(0, "Akryl");
         }
 
         public void LaminatNavigate()
         {
             Frame rootFrame = Window.Current.Content as Frame;
             rootFrame.Navigate(typeof (WidthLengthView));
+            MaterialeSingleton.ListMaterialeSingleton.Insert(0, "Laminat");
         }
 
         public void MassivtræNavigate()
         {
             Frame rootFrame = Window.Current.Content as Frame;
             rootFrame.Navigate(typeof (WidthLengthView));
+            MaterialeSingleton.ListMaterialeSingleton.Insert(0, "Massivtræ");
         }
 
         #endregion

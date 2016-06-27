@@ -8,5 +8,6 @@ namespace IkeaTabletopApp.Model
 {
     public class Materialer
     {
+
     }
 }
