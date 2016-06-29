@@ -8,9 +8,7 @@
     x:Class="IkeaTabletopApplication.VIew.BordpladeForm"
     mc:Ignorable="d">
 
-    <Page.DataContext>
-        <ViewModel:BordpladeFormVM/>
-    </Page.DataContext>
+    
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="235,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="115" Width="1410" FontSize="75">
