@@ -7,8 +7,11 @@
     xmlns:ViewModel="using:IkeaTabletopApplication.ViewModel"
     x:Class="IkeaTabletopApplication.VIew.BordpladeForm"
     mc:Ignorable="d">
+    <Page.DataContext>
+        <ViewModel:BordpladeFormVM/>
+    </Page.DataContext>
 
-    
+
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="235,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="115" Width="1410" FontSize="75">
@@ -17,17 +20,17 @@
 			<Run Text="du ønsker"/>
 			<Run Text="."/>
         </TextBlock>
-        <Button x:Name="LForm" Content="" HorizontalAlignment="Left" Margin="295,335,0,0" VerticalAlignment="Top" Height="330" Width="175" Command="{Binding LFormNavigateToMaterialeCommand, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+        <Button x:Name="LForm" Content="" HorizontalAlignment="Left" Margin="295,335,0,0" VerticalAlignment="Top" Height="330" Width="175" Command="{Binding LFormNavigateToDLCommand, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
             <Button.Background>
                 <ImageBrush Stretch="Fill" ImageSource="ms-appx:///Assets/Bordplade1.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="UForm" Content="" HorizontalAlignment="Left" Margin="830,335,0,0" VerticalAlignment="Top" Height="330" Width="175" Command="{Binding UFormNavigateToMaterialeCommand, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+        <Button x:Name="UForm" Content="" HorizontalAlignment="Left" Margin="830,335,0,0" VerticalAlignment="Top" Height="330" Width="175" Command="{Binding UFormNavigateToDLCommand, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
             <Button.Background>
                 <ImageBrush Stretch="Fill" ImageSource="ms-appx:///Assets/Bordplade2.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="Rectangular" Content="" HorizontalAlignment="Left" Margin="1330,335,0,0" VerticalAlignment="Top" Height="330" Width="175" Command="{Binding RectangularNavigateToMaterialeCommand, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+        <Button x:Name="Rectangular" Content="" HorizontalAlignment="Left" Margin="1330,335,0,0" VerticalAlignment="Top" Height="330" Width="175" Command="{Binding RectangularNavigateToDLCommand, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
             <Button.Background>
                 <ImageBrush Stretch="Fill" ImageSource="ms-appx:///Assets/Bordplade3.png"/>
             </Button.Background>

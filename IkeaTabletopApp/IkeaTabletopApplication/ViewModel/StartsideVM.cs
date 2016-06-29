@@ -25,7 +25,7 @@ namespace IkeaTabletopApplication.ViewModel
        public void NavigateToBordpladeForm()
        {
             Frame rootFrame = Window.Current.Content as Frame;
-            rootFrame.Navigate(typeof(Startside));
+            rootFrame.Navigate(typeof(BordpladeForm));
         }
 
         #region propertychanged helper

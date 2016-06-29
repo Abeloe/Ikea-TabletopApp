@@ -13,36 +13,36 @@ namespace IkeaTabletopApplication.ViewModel
 {
    public class BordpladeFormVM
     {
-        public RelayCommand LFormNavigateToMaterialeCommand { get; set; }
-        public RelayCommand UFormNavigateToMaterialeCommand { get; set; }
-        public RelayCommand RectangularNavigateToMaterialeCommand { get; set; }
+        public RelayCommand LFormNavigateToDLCommand { get; set; }
+        public RelayCommand UFormNavigateToDLCommand { get; set; }
+        public RelayCommand RectangularNavigateToDLCommand { get; set; }
 
       
 
         public BordpladeFormVM()
         {
-            LFormNavigateToMaterialeCommand = new RelayCommand(LFormNavigateToMateriale);
-            UFormNavigateToMaterialeCommand = new RelayCommand(UFormNavigateToMateriale);
-            RectangularNavigateToMaterialeCommand = new RelayCommand(RectangularFormNavigateToMateriale);
+            LFormNavigateToDLCommand = new RelayCommand(LFormNavigateToDL);
+            UFormNavigateToDLCommand = new RelayCommand(UFormNavigateToDL);
+            RectangularNavigateToDLCommand = new RelayCommand(RectangularFormNavigateToDL);
            
         }
 
-        public void LFormNavigateToMateriale()
+        public void LFormNavigateToDL()
         {
             Frame rootFrame = Window.Current.Content as Frame;
-            rootFrame.Navigate(typeof(VælgMateriale));
+            rootFrame.Navigate(typeof(VælgDLpåL_form));
         }
 
-       public void UFormNavigateToMateriale()
+       public void UFormNavigateToDL()
        {
             Frame rootFrame = Window.Current.Content as Frame;
-            rootFrame.Navigate(typeof(VælgMateriale));
+            rootFrame.Navigate(typeof(VælgDLpåU_Form));
         }
 
-       public void RectangularFormNavigateToMateriale()
+       public void RectangularFormNavigateToDL()
        {
             Frame rootFrame = Window.Current.Content as Frame;
-            rootFrame.Navigate(typeof(VælgMateriale));
+            rootFrame.Navigate(typeof(VælgDLRektangulær));
         }
     }
 }
