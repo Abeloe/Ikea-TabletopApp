@@ -15,8 +15,8 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Image x:Name="image" HorizontalAlignment="Left" Height="624" Margin="232,219,0,0" VerticalAlignment="Top" Width="267" Source="ms-appx:///Assets/Bordplade2.png"/>
         <TextBlock x:Name="Side_A" HorizontalAlignment="Left" Margin="535,653,0,0" TextWrapping="Wrap" Text="A" VerticalAlignment="Top" FontSize="72"/>
-        <TextBlock x:Name="Side_B" HorizontalAlignment="Left" Margin="265,848,0,0" TextWrapping="Wrap" Text="B - hele siden" VerticalAlignment="Top" FontSize="72" RenderTransformOrigin="-2.43,-0.461" />
-        <TextBlock x:Name="Side_C" HorizontalAlignment="Left" Margin="232,747,0,0" TextWrapping="Wrap" Text="C - dybden" VerticalAlignment="Top" FontSize="72" RenderTransformOrigin="-2.43,-0.461" />
+        <TextBlock x:Name="Side_B" HorizontalAlignment="Left" Margin="265,878,0,0" TextWrapping="Wrap" Text="B - hele siden" VerticalAlignment="Top" FontSize="72" RenderTransformOrigin="-2.43,-0.461" />
+        <TextBlock x:Name="Side_C" HorizontalAlignment="Left" Margin="232,770,0,0" TextWrapping="Wrap" Text="C - dybden" VerticalAlignment="Top" FontSize="72" RenderTransformOrigin="-2.43,-0.461" />
         <TextBlock x:Name="Side_D" HorizontalAlignment="Left" Margin="133,448,0,0" TextWrapping="Wrap" Text="D" VerticalAlignment="Top" FontSize="72" RenderTransformOrigin="-2.43,-0.461" />
         <TextBlock x:Name="Side_E" HorizontalAlignment="Left" Margin="317,118,0,0" TextWrapping="Wrap" Text="E" VerticalAlignment="Top" FontSize="72" RenderTransformOrigin="-2.43,-0.461" />
         <TextBlock x:Name="Side_F" HorizontalAlignment="Left" Margin="535,219,0,0" TextWrapping="Wrap" Text="F" VerticalAlignment="Top" FontSize="72" RenderTransformOrigin="-2.43,-0.461" />
@@ -34,6 +34,7 @@
         <TextBox x:Name="textBox_F" HorizontalAlignment="Left" Margin="1162,848,0,0" TextWrapping="Wrap" Text="{Binding DL.F, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" FontSize="72" Width="263"/>
         <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="1590,848,0,0" VerticalAlignment="Top" Command="{Binding NavigateToMaterialeCommand}"/>
         <TextBlock x:Name="textBlock_C_helpblock" HorizontalAlignment="Left" Margin="265,710,0,0" TextWrapping="Wrap" Text="| - C - |" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock_B_helpblock" HorizontalAlignment="Left" Margin="246,754,0,0" TextWrapping="Wrap" Text="| - - - - - - - - - - B  - - - - - - - - - - |" VerticalAlignment="Top" Width="240" TextAlignment="Center"/>
 
     </Grid>
 </Page>
