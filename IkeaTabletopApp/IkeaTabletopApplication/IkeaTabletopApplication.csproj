@@ -100,6 +100,7 @@
     <Compile Include="RelayCommand\RelayCommand.cs" />
     <Compile Include="Singleton\BordpladeformSingleton.cs" />
     <Compile Include="ViewModel\BordpladeFormVM.cs" />
+    <Compile Include="ViewModel\MaterialeVM.cs" />
     <Compile Include="ViewModel\StartsideVM.cs" />
     <Compile Include="VIew\BordpladeForm.xaml.cs">
       <DependentUpon>BordpladeForm.xaml</DependentUpon>
@@ -138,6 +139,8 @@
     <Content Include="Assets\Bordplade1.png" />
     <Content Include="Assets\Bordplade2.png" />
     <Content Include="Assets\Bordplade3.png" />
+    <Content Include="Assets\Kvartsplade.png" />
+    <Content Include="Assets\Laminatplade.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />

@@ -33,6 +33,7 @@ namespace IkeaTabletopApplication.ViewModel
         {
             Frame rootFrame = Window.Current.Content as Frame;
             rootFrame.Navigate(typeof(VælgDLpåL_form));
+
         }
 
        public void UFormNavigateToDL()

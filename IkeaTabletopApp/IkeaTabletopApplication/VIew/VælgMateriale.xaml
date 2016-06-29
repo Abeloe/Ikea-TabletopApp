@@ -8,6 +8,16 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel HorizontalAlignment="Left" Height="270" Margin="45,40,0,0" VerticalAlignment="Top" Width="270" RenderTransformOrigin="-4.15,-0.25">
+            <TextBlock x:Name="textBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Kvarts" VerticalAlignment="Top" Height="135" Width="260" FontSize="75"/>
+            <Image x:Name="image1" HorizontalAlignment="Left" Height="135" VerticalAlignment="Top" Width="260" Source="ms-appx:///Assets/Kvartsplade.png" RenderTransformOrigin="0.423,2.593"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="330" Margin="45,390,0,0" VerticalAlignment="Top" Width="315">
+            <TextBlock x:Name="textBlock1" TextWrapping="Wrap" Text="Laminat" Height="90" FontSize="75"/>
+            <Image x:Name="image" HorizontalAlignment="Left" Height="235" VerticalAlignment="Top" Width="310" Source="ms-appx:///Assets/Laminatplade.png" Margin="0,0,-80,0"/>
+        </StackPanel>
+
+
 
     </Grid>
 </Page>
