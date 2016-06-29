@@ -20,9 +20,9 @@ namespace IkeaTabletopApplication.VIew
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class MaterialeValg : Page
+    public sealed partial class VælgMateriale : Page
     {
-        public MaterialeValg()
+        public VælgMateriale()
         {
             this.InitializeComponent();
         }

@@ -95,12 +95,11 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MainPage.xaml.cs">
-      <DependentUpon>MainPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="VIew\BordpladeType.xaml.cs">
-      <DependentUpon>BordpladeType.xaml</DependentUpon>
+    <Compile Include="RelayCommand\RelayCommand.cs" />
+    <Compile Include="ViewModel\BordpladeFormVM.cs" />
+    <Compile Include="VIew\BordpladeForm.xaml.cs">
+      <DependentUpon>BordpladeForm.xaml</DependentUpon>
     </Compile>
     <Compile Include="VIew\VælgFarve.xaml.cs">
       <DependentUpon>VælgFarve.xaml</DependentUpon>
@@ -125,6 +124,9 @@
     <None Include="IkeaTabletopApplication_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Bordplade1.png" />
+    <Content Include="Assets\Bordplade2.png" />
+    <Content Include="Assets\Bordplade3.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -139,11 +141,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="MainPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="VIew\BordpladeType.xaml">
+    <Page Include="VIew\BordpladeForm.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -170,7 +168,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Model\" />
-    <Folder Include="ViewModel\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
