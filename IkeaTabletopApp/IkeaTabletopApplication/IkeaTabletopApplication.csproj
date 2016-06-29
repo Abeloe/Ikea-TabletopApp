@@ -98,6 +98,7 @@
     <Compile Include="Properties\Annotations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RelayCommand\RelayCommand.cs" />
+    <Compile Include="Singleton\BordpladeformSingleton.cs" />
     <Compile Include="ViewModel\BordpladeFormVM.cs" />
     <Compile Include="ViewModel\StartsideVM.cs" />
     <Compile Include="VIew\BordpladeForm.xaml.cs">
