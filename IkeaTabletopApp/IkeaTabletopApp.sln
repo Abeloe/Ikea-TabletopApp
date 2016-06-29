@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IkeaTabletopApp", "IkeaTabletopApp\IkeaTabletopApp.csproj", "{54101EAB-7F38-4728-A371-B319604F7FB4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IkeaTabletopApplication", "IkeaTabletopApplication\IkeaTabletopApplication.csproj", "{00D88B1B-0C15-4B58-B143-CDB61BC2405C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM = Debug|ARM
@@ -33,6 +35,24 @@ Global
 		{54101EAB-7F38-4728-A371-B319604F7FB4}.Release|x86.ActiveCfg = Release|x86
 		{54101EAB-7F38-4728-A371-B319604F7FB4}.Release|x86.Build.0 = Release|x86
 		{54101EAB-7F38-4728-A371-B319604F7FB4}.Release|x86.Deploy.0 = Release|x86
+		{00D88B1B-0C15-4B58-B143-CDB61BC2405C}.Debug|ARM.ActiveCfg = Debug|ARM
+		{00D88B1B-0C15-4B58-B143-CDB61BC2405C}.Debug|ARM.Build.0 = Debug|ARM
+		{00D88B1B-0C15-4B58-B143-CDB61BC2405C}.Debug|ARM.Deploy.0 = Debug|ARM
+		{00D88B1B-0C15-4B58-B143-CDB61BC2405C}.Debug|x64.ActiveCfg = Debug|x64
+		{00D88B1B-0C15-4B58-B143-CDB61BC2405C}.Debug|x64.Build.0 = Debug|x64
+		{00D88B1B-0C15-4B58-B143-CDB61BC2405C}.Debug|x64.Deploy.0 = Debug|x64
+		{00D88B1B-0C15-4B58-B143-CDB61BC2405C}.Debug|x86.ActiveCfg = Debug|x86
+		{00D88B1B-0C15-4B58-B143-CDB61BC2405C}.Debug|x86.Build.0 = Debug|x86
+		{00D88B1B-0C15-4B58-B143-CDB61BC2405C}.Debug|x86.Deploy.0 = Debug|x86
+		{00D88B1B-0C15-4B58-B143-CDB61BC2405C}.Release|ARM.ActiveCfg = Release|ARM
+		{00D88B1B-0C15-4B58-B143-CDB61BC2405C}.Release|ARM.Build.0 = Release|ARM
+		{00D88B1B-0C15-4B58-B143-CDB61BC2405C}.Release|ARM.Deploy.0 = Release|ARM
+		{00D88B1B-0C15-4B58-B143-CDB61BC2405C}.Release|x64.ActiveCfg = Release|x64
+		{00D88B1B-0C15-4B58-B143-CDB61BC2405C}.Release|x64.Build.0 = Release|x64
+		{00D88B1B-0C15-4B58-B143-CDB61BC2405C}.Release|x64.Deploy.0 = Release|x64
+		{00D88B1B-0C15-4B58-B143-CDB61BC2405C}.Release|x86.ActiveCfg = Release|x86
+		{00D88B1B-0C15-4B58-B143-CDB61BC2405C}.Release|x86.Build.0 = Release|x86
+		{00D88B1B-0C15-4B58-B143-CDB61BC2405C}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
