@@ -5,19 +5,16 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:ViewModel="using:IkeaTabletopApplication.ViewModel"
-    x:Class="IkeaTabletopApplication.VIew.VælgFarve"
+    x:Class="IkeaTabletopApplication.VIew.MaterialeTykkelse"
     mc:Ignorable="d">
+
     <Page.DataContext>
-        <ViewModel:VælgFarveVM/>
+        <ViewModel:VælgTykkelseVM/>
     </Page.DataContext>
 
-
-
-
-
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <ListView x:Name="listView" HorizontalAlignment="Left" Height="985" Margin="50,45,0,0" VerticalAlignment="Top" Width="395" ItemsSource="{Binding FarveOC, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Background="#FF7E1F1F" />
-        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="1660,930,0,0" VerticalAlignment="Top" Height="100" Width="195"/>
+        <ListView x:Name="Tykkelser" HorizontalAlignment="Left" Height="625" Margin="280,140,0,0" VerticalAlignment="Top" Width="420"  ItemsSource="{Binding TykkelseOC, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" SelectedItem="{Binding TykkelseOC}" />
+        <Button x:Name="button" HorizontalAlignment="Left" Margin="1440,820,0,0" VerticalAlignment="Top" Height="135" Width="260" Command="{Binding NavigateToFarveCommad}"/>
 
     </Grid>
 </Page>

@@ -13,6 +13,30 @@
     </Page.DataContext>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="1392,708,0,0" VerticalAlignment="Top" Command="{Binding NavigateToDlCommand}" Height="247" Width="294"/>
+        <Button x:Name="button" Content="DybdeLængde" HorizontalAlignment="Left" Margin="1560,778,0,0" VerticalAlignment="Top" Command="{Binding NavigateToDlCommand}" Height="167" Width="310"/>
+      
+        <StackPanel HorizontalAlignment="Left" Height="695" Margin="120,215,0,0" VerticalAlignment="Top" Width="355">
+            <Button x:Name="Akryl" Content="Akryl" HorizontalAlignment="Left" VerticalAlignment="Top" Height="175" Width="345" FontSize="40" Command="{Binding AkrylToTykkelseNavigateCommand }">
+                <Button.Background>
+                    <ImageBrush Stretch="Fill" ImageSource="ms-appx:///Assets/Akrylplade.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="Kvarts" Content="Kvarts" HorizontalAlignment="Left" VerticalAlignment="Top" Height="175" Width="355" FontSize="40" Command="{Binding KvartsToTykkelseNavigateCommand}">
+                <Button.Background>
+                    <ImageBrush Stretch="Fill" ImageSource="ms-appx:///Assets/Kvartsplade.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="Laminat" Content="Laminat" HorizontalAlignment="Left" VerticalAlignment="Top" Height="175" Width="355" FontSize="40" Command="{Binding LaminatToTykkelseNavigateCommand}">
+                <Button.Background>
+                    <ImageBrush Stretch="Fill" ImageSource="ms-appx:///Assets/Laminatplade.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="Massivtræ" Content="Massiv træ" HorizontalAlignment="Left" VerticalAlignment="Top" Height="175" Width="345" FontSize="40" Command="{Binding MassivTræToTykkelseNavigateCommand}" >
+                <Button.Background>
+                    <ImageBrush Stretch="Fill" ImageSource="ms-appx:///Assets/Massivtræ.png"/>
+                </Button.Background>
+            </Button>
+        </StackPanel>
+
     </Grid>
 </Page>

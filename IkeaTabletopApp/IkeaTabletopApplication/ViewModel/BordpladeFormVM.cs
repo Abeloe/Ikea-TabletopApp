@@ -24,22 +24,22 @@ namespace IkeaTabletopApplication.ViewModel
 
         public BordpladeFormVM()
         {
-            LFormNavigateToDLCommand = new RelayCommand(LFormNavigateToDL);
-            UFormNavigateToDLCommand = new RelayCommand(UFormNavigateToDL);
-            RectangularNavigateToDLCommand = new RelayCommand(RectangularFormNavigateToDL);
+            LFormNavigateToDLCommand = new RelayCommand(LFormNavigateToMateriale);
+            UFormNavigateToDLCommand = new RelayCommand(UFormNavigateToMateriale);
+            RectangularNavigateToDLCommand = new RelayCommand(RectangularFormNavigateToMateriale);
             FormValgSingleton= FormValgSingleton.Instance;
 
            
         }
 
-        public void LFormNavigateToDL()
+        public void LFormNavigateToMateriale()
         {
             Frame rootFrame = Window.Current.Content as Frame;
             rootFrame.Navigate(typeof(VælgMateriale));
             FormValgSingleton.ListFormValg.Add(1);
         }
 
-       public void UFormNavigateToDL()
+       public void UFormNavigateToMateriale()
        {
             Frame rootFrame = Window.Current.Content as Frame;
             rootFrame.Navigate(typeof(VælgMateriale));
@@ -47,7 +47,7 @@ namespace IkeaTabletopApplication.ViewModel
 
         }
 
-       public void RectangularFormNavigateToDL()
+       public void RectangularFormNavigateToMateriale()
        {
             Frame rootFrame = Window.Current.Content as Frame;
             rootFrame.Navigate(typeof(VælgMateriale));

@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace IkeaTabletopApplication.Singleton
 {
-    internal class FarveValgSingleton
+   public class FarveValgSingleton
     {
         private static FarveValgSingleton intance = new FarveValgSingleton();
 
@@ -15,11 +16,11 @@ namespace IkeaTabletopApplication.Singleton
             get { return intance; }
         }
 
-        public List<int> ListFarveValg { get; set; }
+        public List<string> ListFarveValg { get; set; }
 
         private FarveValgSingleton()
         {
-            ListFarveValg = new List<int>();
+            ListFarveValg = new List<string>();
         }
     }
 
